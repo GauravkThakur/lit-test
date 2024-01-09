@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TestLit",
+          "declaration": {
+            "name": "TestLit",
+            "module": "./TestLit.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/test-lit.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "test-lit",
+          "declaration": {
+            "name": "TestLit",
+            "module": "/src/TestLit.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/TestLit.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "TestLit",
+          "members": [
+            {
+              "kind": "field",
+              "name": "liElement",
+              "type": {
+                "text": "HTMLLIElement[]"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "list",
+              "type": {
+                "text": "array"
+              },
+              "default": "[\n    \"This is the option 1\",\n    \"This is the option 2\",\n    \"This is the option 3\",\n  ]"
+            },
+            {
+              "kind": "field",
+              "name": "selectedIndex",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "method",
+              "name": "onMouseDown",
+              "parameters": [
+                {
+                  "name": "item",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "onKeydown",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                },
+                {
+                  "name": "item",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "test-lit",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TestLit",
+          "declaration": {
+            "name": "TestLit",
+            "module": "src/TestLit.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
